@@ -1,0 +1,19 @@
+-- My first SQL project
+-- Create a database for school practice
+
+CREATE DATABASE IF NOT EXISTS school_db;
+
+USE school_db;
+
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+);
+
+INSERT INTO students (id, name, age)
+VALUES
+    (1, 'Michael', 25),
+    (2, 'Sarah', 23);
+
+SELECT * FROM students;
